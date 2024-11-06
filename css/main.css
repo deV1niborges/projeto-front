@@ -7,12 +7,16 @@
 
 body {
   background-color: rgb(0, 0, 0);
-  display: flex;
+}
+
+div#one {
+  display: flex; 
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 img {
-  height: auto;
-  width: 100%;
+  max-height: 100vh;
+  max-width: 100%;
 }
