@@ -6,11 +6,28 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
+}
+
+h1 {
+  margin: 20px;
+  font-weight: 100;
+  font-family: "StarDeath";
+  color: transparent;
+  -webkit-text-stroke: 1px #86EDEF;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  font-family: "Montserrat";
+  margin: 20px;
+  text-align: center;
+  color: white;
 }
 
 div#one {
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -19,4 +36,14 @@ div#one {
 img {
   max-height: 100vh;
   max-width: 100%;
+}
+
+@font-face {
+  font-family: "StarDeath";
+  src: url(../fonts/Death\ Star.otf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
 }
