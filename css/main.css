@@ -34,6 +34,7 @@ div#one {
 }
 
 img {
+  margin-bottom: auto;
   max-height: 100vh;
   max-width: 100%;
 }
