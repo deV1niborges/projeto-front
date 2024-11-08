@@ -5,9 +5,11 @@
   padding: 0px;
 }
 
+html,
 body {
   background-color: black;
-  margin: 20px;
+  height: 100%;
+  padding: 20px;
 }
 
 h1 {
@@ -15,7 +17,7 @@ h1 {
   font-weight: 100;
   font-family: "StarDeath";
   color: transparent;
-  -webkit-text-stroke: 1px #86EDEF;
+  -webkit-text-stroke: 1px #86edef;
   text-align: center;
 }
 
@@ -31,13 +33,71 @@ div#one {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin-bottom: 30px;
+}
+
+div#links {
+  text-align: center;
+}
+
+div#container {
+  background-image: linear-gradient(to right, #294bb2, #54b3d6);
+  border-radius: 30px;
+  margin-bottom: 40px;
 }
 
 img {
   margin-bottom: auto;
-  max-height: 100vh;
+  max-height: 100%;
   max-width: 100%;
+}
+
+img.astro {
+  height: 100px;
+}
+
+a {
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #294bb2 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-size: 2em;
+  font-family: Montserrat;
+  margin-bottom: 20px;
+}
+
+a:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  background-position: 0;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+p.text {
+  text-align: justify;
 }
 
 @font-face {

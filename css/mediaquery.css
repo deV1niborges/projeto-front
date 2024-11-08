@@ -2,7 +2,21 @@
 
 @media screen and (min-width: 768px) {
   img {
-    max-width: 100%;
-    max-height: 99vh;
+    max-width: 90%;
+    max-height: 60vh;
+  }
+
+  div#center {
+    display: flex;
+    justify-content: center;
+  }
+
+  div#container {
+    width: 900px;
+    height: auto;
+  }
+
+  p.text {
+    font-size: clamp(16px, 5vw, 20px);
   }
 }
