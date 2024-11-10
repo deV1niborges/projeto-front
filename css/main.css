@@ -26,9 +26,9 @@ h1 {
 }
 
 p {
-  font-size: 15px;
-  font-family: "Montserrat";
   margin: 20px;
+  padding-top: 20px;
+  font-family: "Montserrat";
   text-align: center;
   color: white;
 }
