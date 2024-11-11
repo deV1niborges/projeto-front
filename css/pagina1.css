@@ -12,8 +12,6 @@ body {
 div#principal {
   background-image: url(../imagens/space.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center right;
   background-size: cover;
   height: 100vh;
 }
