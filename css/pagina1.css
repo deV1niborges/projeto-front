@@ -1,15 +1,21 @@
 @charset "UTF-8";
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-div.principal {
+main {
+  background-color: rgb(0, 0, 0) !important;
+  height: 100vh;
+}
+
+div#principal {
   background-image: url(../imagens/space.png);
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center right;
   background-size: cover;
-  width: 100%;
   height: 30vh;
 }
 
@@ -44,24 +50,66 @@ nav span:nth-child(5) {
 }
 
 @keyframes jump {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 button {
   margin-bottom: 10px !important;
+  background-color: #30015f !important;
 }
 
 a:hover {
-  background-color: #30015F;
+  background-color: #30015f;
   color: white !important;
   transition: 0.3s;
-  border-radius: 14px;
+  border-radius: 16px;
 }
 
 a {
-  color: rgb(0, 0, 0) !important;
+  border-radius: 50px;
+  border: rgba(0, 0, 0, 0.541) solid 2px !important;
+  margin: 10px !important;
+  text-align: center;
+  width: 100px;
+  background-color: #30015f !important;
+  color: #9b17a0 !important;
+}
+
+/* Mudando a barra de rolagem */
+
+/* Define o estilo para a barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Define o estilo para a parte de fundo da barra de rolagem (track) */
+::-webkit-scrollbar-track {
+  background-color: rgba(22, 20, 114, 0.849); /* Cor de fundo do track */
+  border-radius: 10px; /* Bordas arredondadas do track */
+}
+
+/* Define o estilo para o polegar (thumb), a parte que o usuário arrasta */
+::-webkit-scrollbar-thumb {
+  background-color: #30015f; /* Cor do polegar */
+  border-radius: 10px; /* Bordas arredondadas do thumb */
+}
+
+/* Define o estilo da borda do polegar, criando uma borda ao redor */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9b17a0; /* Cor do polegar quando está sendo pressionado */
+}
+
+/* Adiciona uma borda ao track */
+::-webkit-scrollbar-track-piece {
+  border: 2px solid #30015f; /* Cor da borda do track */
 }
 
 @font-face {
