@@ -7,14 +7,53 @@
 
 body {
   background-color: black !important;
+  height: 100%;
 }
 
 div#principal {
-  background-image: url(../imagens/space.png);
+  background-image: url(../imagens/space-skills.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
+
+div.texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.container:hover .home {
+  transform: scale(1.2) rotate(5deg);
+  opacity: 0.9;
+}
+
+img.home {
+  max-width: 100vw;
+  max-height: 100vh;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.titulo-com-tracos {
+  font-family: "StarDeath";
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 20px 0;
+  border-top: 2px solid #080804;
+  border-bottom: 2px solid #030301; 
+  display: inline-block;
+}
+
 
 /* Mudando a barra de rolagem */
 
@@ -53,4 +92,22 @@ div#principal {
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+@media screen and (min-width: 85px) {
+  img.home {
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 127px) {
+  .titulo-com-tracos {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .titulo-com-tracos {
+    font-size: 2em;
+  }
 }
