@@ -128,9 +128,8 @@ p.text {
 
 /* Adicionando bordas ao track (opcional) */
 ::-webkit-scrollbar-track-piece {
-  border: 1px solid #294CB2; /* Borda do track */
+  border: 1px solid #294cb2; /* Borda do track */
 }
-
 
 @font-face {
   font-family: "StarDeath";
