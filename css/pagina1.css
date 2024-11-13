@@ -6,12 +6,16 @@
 }
 
 body {
-  background-image: linear-gradient(to top, #2e2773, #4e197c);
-  height: 100%;
+  background-color: #0d0c4a;
+  background-image: url(../imagens/space.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 div#principal {
   background-image: url(../imagens/space-skills.png);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -106,7 +110,7 @@ img.home {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  margin-bottom: 40px;
 }
 
 p {
@@ -157,6 +161,13 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    background-image: url(../imagens/space.png);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
   .tracking-in-contract {
     font-size: 2em;
   }
