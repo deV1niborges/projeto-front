@@ -142,7 +142,13 @@ p {
   src: url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
 }
 
-@media screen and (min-width: 85px) {
+@media screen and (min-width: 51px) and (max-width: 1000px){
+  img.home {
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 300px){
   img.home {
     height: 90px;
   }
