@@ -6,11 +6,13 @@
 }
 
 body {
-  background-color: #000000;
-  background-image: url(../imagens/space-skills.png);
-  background-position: center right;
-  background-repeat: no-repeat;
-  height: 100vh;
+   background-image: url(../imagens/space-skills.png);
+   background-color: black;
+   background-repeat: no-repeat;
+   background-position: right center;
+   background-size: cover;
+   background-attachment: fixed;
+   height: 100vh;
 }
 
 div.Text {
@@ -142,9 +144,17 @@ p {
   src: url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
 }
 
-@media screen and (min-width: 51px) and (max-width: 300px) {
+@media screen and (min-width: 50px) and (max-width: 300px) {
   img.home {
     height: 30px;
+  }
+
+  .skills {
+    margin-bottom: 30px;
+  }
+
+  .Text {
+    margin: auto;
   }
 }
 
@@ -173,10 +183,6 @@ p {
 }
 
 @media screen and (min-width: 640px) and (max-width: 1300px) {
-  body {
-    height: 900px;
-  }
-
   .tracking-in-contract {
     font-size: 2em;
   }
@@ -187,10 +193,6 @@ p {
 }
 
 @media screen and (min-width: 1300px) {
-  body {
-    background-size: cover;
-  }
-
   .tracking-in-contract {
     font-size: 2.2em;
   }
