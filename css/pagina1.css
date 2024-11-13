@@ -6,8 +6,9 @@
 }
 
 body {
-  background-image: linear-gradient(to top, #2E2773 , #4e197c);
+  background-image: linear-gradient(to top, #2e2773, #4e197c);
   height: 100vh;
+  overflow: hidden;
 }
 
 div#principal {
@@ -83,10 +84,30 @@ img.home {
   }
 }
 
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eeeeb7;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c6ecaf;
+  border-radius: 4px;
+  border: 2px solid #eeeeb7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #648aa3;
+}
+
 .skills {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 p {
@@ -100,35 +121,6 @@ p {
   border-bottom: 1px solid #030301;
   border: 1px solid black;
   text-align: center;
-}
-
-/*Mudando a barra de rolagem */
-
-/* Define o estilo para a barra de rolagem */
-::-webkit-scrollbar {
-  width: 12px; /* Largura da barra de rolagem */
-}
-
-/* Define o estilo para a parte de fundo da barra de rolagem (track) */
-::-webkit-scrollbar-track {
-  background-color: rgba(22, 20, 114, 0.849); /* Cor de fundo do track */
-  border-radius: 10px; /* Bordas arredondadas do track */
-}
-
-/* Define o estilo para o polegar (thumb), a parte que o usuário arrasta */
-::-webkit-scrollbar-thumb {
-  background-color: #30015f; /* Cor do polegar */
-  border-radius: 10px; /* Bordas arredondadas do thumb */
-}
-
-/* Define o estilo da borda do polegar, criando uma borda ao redor */
-::-webkit-scrollbar-thumb:hover {
-  background-color: #9b17a0; /* Cor do polegar quando está sendo pressionado */
-}
-
-/* Adiciona uma borda ao track */
-::-webkit-scrollbar-track-piece {
-  border: 2px solid #30015f; /* Cor da borda do track */
 }
 
 @font-face {
