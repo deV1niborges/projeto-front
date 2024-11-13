@@ -31,6 +31,18 @@ div.Text {
   opacity: 0.9;
 }
 
+.container2 {
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  float: right;
+}
+
+.container2:hover .home {
+  transform: scale(1.2) rotate(5deg);
+  opacity: 0.9;
+}
+
 img.home {
   max-width: 100vw;
   max-height: 100vh;
