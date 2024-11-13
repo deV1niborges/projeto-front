@@ -7,7 +7,7 @@
 
 body {
   background-image: linear-gradient(to top, #2e2773, #4e197c);
-  height: 100vh;
+  height: 100%;
 }
 
 div#principal {
@@ -106,7 +106,7 @@ img.home {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin: 30px;
 }
 
 p {
