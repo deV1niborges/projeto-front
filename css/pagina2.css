@@ -6,8 +6,5 @@
 }
 
 body {
-  height: 100vh;
-  background: black url(../imagens/space\ background.png) center center
-    no-repeat fixed; /* short hand */
-  background-size: cover;
+  background-color: black;
 }
